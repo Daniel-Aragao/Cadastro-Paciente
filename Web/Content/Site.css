@@ -1,0 +1,50 @@
+﻿
+.navbar-ligthgreen{
+    background-color: lightgreen;
+    border: 1px solid gray;
+}
+
+#titulo-label{
+    width: 300px;
+    height: 500px;
+    font-size: 1.6em;
+    margin: auto 120px;
+    padding-top: 20px;
+}
+
+
+.labels{
+    font-size: 1.9em;
+}
+
+#nav-tolbar{
+    background-color: lightgreen;
+}
+
+#footer{
+    font-size: 16px;
+}
+ 
+body{
+    padding-top: 70px;
+    padding-bottom:70px;
+}
+
+.panel-lightgreen {
+  border-color: lightgreen;
+}
+.panel-lightgreen > .panel-heading {
+  color: black;
+  background-color: lightgreen;
+  border-color: lightgreen;
+}
+.panel-lightgreen > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: lightgreen;
+}
+.panel-lightgreen > .panel-heading .badge {
+  color: black;
+  background-color: lightgreen;
+}
+.panel-lightgreen > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: lightgreen;
+}

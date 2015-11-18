@@ -1,0 +1,49 @@
+﻿
+@using Core
+
+@model IEnumerable<Paciente> 
+@{
+    ViewBag.Title = "Lista de Pacientes";
+}
+
+
+@section header{
+}
+
+<table class="centered highlight">
+    <thead>
+        <tr>
+            <th data-field="id">ID</th>
+            <th data-field="name">Nome</th>
+            <th data-field="price">Tipo de Tratamento</th>
+        </tr>
+    </thead>
+
+    <tbody >
+    @foreach (var paciente in Model)
+    {
+        <tr>
+            
+            <td>@paciente.PacienteId</td>
+            <td>@paciente.Nome</td>
+            @switch (paciente.TipoTratamento)
+            {
+                case 1:
+                    <td>Quimioterapia Dia</td>
+                    break;
+
+                case 2:
+                    <td>Quimioterapia Sequencial</td>
+                    break;
+
+                case 3:
+                    <td>Procedimento</td>
+                    break;
+
+                case 4:
+                    <td>Intercorrencia</td>
+                    break;
+            }
+        </tr>
+    }
+</table>

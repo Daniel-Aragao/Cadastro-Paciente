@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro";
+}
+
+
+
+<div id="tit">
+    <label id="titulo-label">Cadastrar Paciente</label>
+</div>
+
+
+<div class="row">
+    <form class="col s12" method="post">
+        <div>
+        @*Html.ValidationSummary()*@
+        </div>
+            <div class="input-field col s12">
+            <input id="inputNome" type="text" class="validate" length="30" name="Nome">
+            <label for="inputNome" class="labels">Nome</label>
+        </div>
+
+        <div class="input-field col s12">
+            <input id="inputPeso" type="text" class="validate" name="Peso">
+            <label for="inputPeso" class="labels">Digite o Peso</label>
+        </div>
+
+        <div class="input-field col s12">
+            <input id="inputAltura" type="text" class="validate" name="Altura">
+            <label for="inputAltura" class="labels">Digite a Altura</label>
+        </div>
+
+        <div class="input-field col s12">
+            <input type="date" class="datepicker" name="DataNascimento" id="inputDataNascimento" >
+            <label for="inputDataNascimento" class="labels">Digite a Data de Nascimento</label>
+        </div>
+
+        <div class="input-field col s12">
+            
+            <select name="TipoTratamento" id="formGroupTipoDeTratamento">
+                <option value="" disabled selected>Escolha o Tipo de Tratamento...</option>
+                <option value="1">Quimioterapia Dia</option>
+                <option value="2">Quimioterapia Sequencial</option>
+                <option value="3">Procedimento</option>
+                <option value="4">Intercorrencia</option>
+            </select>
+        </div>
+
+        <div class="input-field col s12 row">
+            <label class="labels">Sexo</label>
+        </div>
+        <div class="input-field col s12">
+            <div class="row">
+                <p>
+                    <input class="with-gap" name="Sexo" type="radio" id="homeRadios" value="H" />
+                    <label for="homeRadios" class="labels">Homem</label>
+                </p>
+                <p>
+                    <input class="with-gap" name="Sexo" type="radio" id="mulherRadios" value="M" />
+                    <label for="mulherRadios" class="labels">Mulher</label>
+                </p>
+
+            </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
