@@ -18,6 +18,7 @@ namespace Web.Models
         {
             Pacientes = new List<Paciente>();
             EventCommand = "List";
+            SearchEntity = new Paciente();
         }
 
         private void ResetSearch()
