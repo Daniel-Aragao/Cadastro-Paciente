@@ -44,6 +44,7 @@ namespace Web.Models
                     break;
                 case "limpar":
                     ResetSearch();
+                    Get();
                     break;
                 case "imprimir":
                     break;

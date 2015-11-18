@@ -13,8 +13,7 @@ namespace Core
         public List<Paciente> Get( Paciente entity)
         {
             List<Paciente> ret = new List<Paciente>();
-
-
+            
             //Add data access
             ret = CreateMockData();
             //Context _ctx = new Context();
@@ -45,6 +44,7 @@ namespace Core
                 DataNascimento = new DateTime(1995, 11, 17),
                 PacienteId = 0
             });
+
             ret.Add(new Paciente()
             {
                 Altura = 1.60,
@@ -53,8 +53,9 @@ namespace Core
                 Sexo = 'F',
                 TipoTratamento = 2,
                 DataNascimento = new DateTime(1998, 11, 08),
-                PacienteId = 2
+                PacienteId = 1
             });
+
             ret.Add(new Paciente()
             {
                 Altura = 1.80,
@@ -63,7 +64,40 @@ namespace Core
                 Sexo = 'M',
                 TipoTratamento = 3,
                 DataNascimento = new DateTime(1990, 11, 22),
-                PacienteId = 1
+                PacienteId = 2
+            });
+
+            ret.Add(new Paciente()
+            {
+                Altura = 1.70,
+                Nome = "Henrique",
+                Peso = 70,
+                Sexo = 'M',
+                TipoTratamento = 3,
+                DataNascimento = new DateTime(1947, 08, 14),
+                PacienteId = 3
+            });
+
+            ret.Add(new Paciente()
+            {
+                Altura = 1.63,
+                Nome = "Bruna",
+                Peso = 60,
+                Sexo = 'F',
+                TipoTratamento = 3,
+                DataNascimento = new DateTime(1998, 08, 14),
+                PacienteId = 4
+            });
+
+            ret.Add(new Paciente()
+            {
+                Altura = 1.43,
+                Nome = "Pedro",
+                Peso = 60,
+                Sexo = 'M',
+                TipoTratamento = 3,
+                DataNascimento = new DateTime(2000, 02, 28),
+                PacienteId = 5
             });
 
             return ret;

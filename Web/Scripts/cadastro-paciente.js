@@ -6,10 +6,11 @@
     });
 
     //Buttons actions
-    $("[data-pdsa-action]").on("click", function (a) {
-        a.preventDefault();
-        $("#EventCommand").val($(this).attr("data-pdsa-action"));
+    //$("[data-pdsa-action]").on("click", function (e) {
+    //    e.preventDefault();
 
-        $("form").submit();
-    });
+    //    $("#EventCommand").val($(this).data("pdsa-action"));
+
+    //    $("form").submit();
+    //});
 });
